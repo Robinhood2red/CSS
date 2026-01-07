@@ -14,6 +14,35 @@ body {
     background-position: center;
 }
 
+.logo {
+    width: 15em;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgsection1 {
+    width: 150px;
+    height: 150px;
+}
+
+.liens {
+    display: flex;
+}
+
+ul li {
+    padding: 40px;
+    list-style-type: none;
+}
+
 h1{
     color: red;
     font-family: 'Courier New', Courier, monospace;
@@ -58,6 +87,53 @@ strong{color: red;
     order: 1
 }
 
+.blanc {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    width: 150px;
+    height: 150px;
+}
+
+.bleue {
+    border: 1px solid black;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+.violet {
+    border: 1px solid black;
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+}
+
+.rouge {
+    border: 1px solid black;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+}
+
+.vert {
+    border: 1px solid black;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+
+.cadre
+ {display: flex;
+    background-color: rgba(189, 13, 119, 0.459);
+    justify-content: space-around;
+
+}
+
+.cadre2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 /*
 justify-content = aligne les éléments flex selon l'axe principal (ordonnée)
@@ -68,4 +144,7 @@ align-self = Aligne un élément flex selon l'axe transversal, outrepassant la v
 flex-wrap = Spécifie si les éléments flex sont forcés à être sur une seule ligne ou peuvent être enveloppés sur plusieurs lignes.
 flex-flow = Raccourci pour flex-direction et flex-wrap.
 align-content = Aligne les lignes d'un conteneur flex à l'intérieur du conteneur flex quand il y a de l'espace superflu sur l'axe transversal.
+
+mettre marge entre chaque boites
+
 */
