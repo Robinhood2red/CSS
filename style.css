@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pour inclure les marges internes et les bordures dans les marges des parents*/
+}
+a{
+    text-decoration: none; /*enlève les deco texte*/
+}
+
+body {
+    background-image: url(images/Pink\ Guy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    text-align: center;
+    margin: 70px 0px 50px 0px;
+    border: 5px dotted purple;
+    padding: 30px;
+    width: 70%;
+    background-color: aquamarine;
+}
+
+strong{color: red;
+    font-size: 2em;
+    margin: auto;
+    border: 5px dotted;
+}
+
+.h22{
+    color: blue;
+}
+
+.h23 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.lorem1 {
+    color: blueviolet;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.lorem2 {
+    color: brown;
+    background-color: black;
+    display: flex;
+    align-items: last baseline;
+    order: 1
+}
+
+
+/*
+justify-content = aligne les éléments flex selon l'axe principal (ordonnée)
+align-items = Aligne les éléments flex selon l'axe transversal (abscisse)
+flex-direction = Définit la direction de l'axe principale
+order = Spécifie l'ordre de l'élément flex
+align-self = Aligne un élément flex selon l'axe transversal, outrepassant la valeur de align-items.
+flex-wrap = Spécifie si les éléments flex sont forcés à être sur une seule ligne ou peuvent être enveloppés sur plusieurs lignes.
+flex-flow = Raccourci pour flex-direction et flex-wrap.
+align-content = Aligne les lignes d'un conteneur flex à l'intérieur du conteneur flex quand il y a de l'espace superflu sur l'axe transversal.
+*/
