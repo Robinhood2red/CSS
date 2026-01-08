@@ -23,9 +23,5 @@ git push -u origin main
 
 
 git add . == POUR maj SI problème
-<<<<<<< HEAD
 git commit -m "maj"
-=======
-git branch -M "nom de ma maj"
->>>>>>> 35d206dcb471df10b4505682eaefacd3256666bf
 git push -u origin main
