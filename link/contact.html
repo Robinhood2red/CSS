@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+
+<body>
+   <h1>Contact</h1> 
+    <main>
+        <section> 
+        <p>Création formulaire</p>
+        <form method="get" action=""></form>
+            <p>
+                <label for="prénom">Votre prénom</label>
+                <input type="text" name="prénom" placeholder="Votre prénom" size="20" maxlength="40">
+            </p>
+            <p><!--checkbox-->
+                Cochez vos aliments préféré : <br>
+                <input type="checkbox" name="Frites" id="Frites"> <!--input avant label pour avoir la case à cocher avant-->
+                <label for="Frites">Frites</label><br>
+                <input type="checkbox" name="Steak" id="Steak">
+                <label for="Steak">Steak</label><br>
+                <input type="checkbox" name="Burger" id="Burger">
+                <label for="Burger">Burger</label><br>
+                <input type="checkbox" name="Salade" id="Salade">
+                <label for="Salade">Salade</label>
+            </p>
+            <p><!--Radio-->
+                Veuillez indiquer votre tranche d'âge <br>
+                <input type="radio" name="âge" value="moins15" id="moins15">
+                <label for="moins15">Moins de 15 ans</label><br>
+                <input type="radio" name="âge" value="medium15-25" id="medium15-25">
+                <label for="medium15-25">15-25 ans</label><br>
+                <input type="radio" name="âge" value="medium25-40" id="meduim25-40">
+                <label for="meduim25-40">25-40 ans</label><br>
+                <input type="radio" name="âge" value="plus40" id="plus40">
+                <label for="plus40">Plus de 40 ans</label>
+            </p>
+        <form action="get" action="">
+            <p>
+                <label for="pays">De quelle pays venez-vous</label><br>
+                <select name="pays" id="pays">
+                    <option value="Sénégal">Sénégal</option>
+                    <option value="France" selected>France</option>
+                    <option value="Royaume-Unis">Royaule-Unis</option>
+                    <option value="Maroc">Maroc</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Vos coordonnées</legend> <!--Titre du fieldset-->
+                <label for="nom">Quel est votre nom ?</label>
+                <input type="text" name="nom" id="nom"><br>
+                <label for="text">Quel est votre prénom</label>
+                <input type="text" name="prénom" id="prénom" required><br><!--requierd pour demander une réponse obligatoire-->
+                <label for="email">Quel est votre email ?</label>
+                <input type="text" name="email" id="email">
+            </fieldset>
+            <p>Quel somptueux formulaire</p>
+            <input type="submit" value="Emvoyer mon form">
+          
+          <div slot="footer">
+              <!-- define custom footer actions here -->
+          </div>
+        </form>
+        </section>
+    </main>
+</body>
+
+</html>
