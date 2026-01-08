@@ -6,10 +6,10 @@ $ == nom class
 {} == nom de la ligne
 
 git remote add origin https://github.com/Robinhood2red/CSS.git
-git branch -M main
+git branch -m main
 git push -u origin main
 
 
 git add . == POUR maj SI problème
-git commit -M "nom de ma maj"
+git commit -m "maj"
 git push -u origin main
