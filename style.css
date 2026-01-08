@@ -157,7 +157,7 @@ strong{color: red;
 }
 
 th,td {
-    /*border: 3px solid black;*/
+    border: 3px solid black;
     padding: 5px; /*Pour marge interne*/
     border-width: 1px 3px 5px 8px;
     border-style: dashed solid dotted double;
@@ -266,6 +266,90 @@ th,td {
 .huit {
     grid-column: 1/4;
     grid-row: 5/5;
+}
+
+.joji {
+    width: 200px;
+}
+
+.section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(240, 240, 240);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.txt-présentation {
+    font-size: 14px;
+    color: rgb(121, 4, 92);
+}
+
+.toggle-desc {
+    display: none;
+}
+
+.arrow-container {
+    margin: 15px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.arrow-down {
+    font-size: 24px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.description-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0,3 ease-out;
+    background: rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.txtboxblack {
+    color: black;
+}
+
+.toggle-desc:checked ~ .description-box {/*toggle-desc:checked == Si à été coché -- Le tild ~ 
+    cible un élément, à condition qu'ils partagent le même parent (ils sont frères),
+    même s'il y a d'autres balises entre les deux, différent du + qui cible uniquement le frère immédiat*/
+    max-height: 500px;
+    padding: 15px;
+}
+
+.toggle-desc:checked ~ .arrow-container .arrow-down {
+    transform: rotate(180deg);
+    transform: scale(1.5); /*Agrandit la flèche et le texte*/
+}
+
+footer {
+    background-color: #000000e7; /*Couleur Pink Guy*/
+    color: white;
+    padding: 30px 0 10px 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
 }
 
 /*
