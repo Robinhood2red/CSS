@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ossature automatique == ! + ENTRER 
 annotations selection == ctrl + :
 . == class
@@ -7,9 +8,24 @@ $ == nom class
 
 git remote add origin https://github.com/Robinhood2red/CSS.git
 git branch -m main
+=======
+Ossature automatique = ! + ENTRER 
+annotations selection = ctrl + :
+. = class
+$ = nom class
+* = nombre de lignes
+{} = nom de la ligne
+
+git remote add origin https://github.com/Robinhood2red/CSS.git
+git branch -M main
+>>>>>>> 35d206dcb471df10b4505682eaefacd3256666bf
 git push -u origin main
 
 
 git add . == POUR maj SI problème
+<<<<<<< HEAD
 git commit -m "maj"
+=======
+git branch -M "nom de ma maj"
+>>>>>>> 35d206dcb471df10b4505682eaefacd3256666bf
 git push -u origin main
