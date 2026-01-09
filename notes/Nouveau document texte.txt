@@ -16,7 +16,6 @@ $ = nom class
 
 git remote add origin https://github.com/Robinhood2red/CSS.git
 git branch -M main
->>>>>>> 35d206dcb471df10b4505682eaefacd3256666bf
 git push -u origin main
 
 

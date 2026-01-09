@@ -78,6 +78,24 @@ strong{color: red;
     align-items: center;
 }
 
+.fade-in {
+    width: 500px;
+    margin-top: 10em;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeInMove 3s ease-out forwards;
+}
+.fadeinColor {
+    color: pink;
+}
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .lignes {
     display: flex;
     flex-direction: row-reverse;
@@ -338,6 +356,121 @@ th,td {
     transform: rotate(180deg);
     transform: scale(1.5); /*Agrandit la flèche et le texte*/
 }
+
+:root {
+    /*Couleur par défaut (light mode)*/
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: white;
+    --stylePrimary: display: flex, justify-content: center;
+}
+/*Section hover et animation de base*/
+.demo-section {
+padding: 50px;
+text-align: center;
+background-color: var(--card-bg);
+}
+
+.btn-intro {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: rgb(253, 145, 163);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /*L'animation d'entrée*/
+    animation: slideUpFade 1.5s ease-in;
+}
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Conteneur de liens*/
+.links-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.links-container a { /*nomdemaclass a == les a contenu dans ma class uniquement*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size: bold;
+    font-size: 1.1rem;
+    transition: all 0.3 ease;
+}
+
+.hover-color {
+    color: blueviolet;
+    padding: 5px 10px;
+}
+
+.hover-color:hover {
+    background-color: rgb(253, 145, 163);
+    color: white;
+    border-radius: 5px;
+}
+/*Transformation : grossissement (scale)*/
+.hover-grow {
+    color: blueviolet;
+    display: inline-block;
+}
+    /*Important pour le transform*/
+.hover-grow:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+/*Pseudo-élément : Soulignement qui part du centre*/
+.hover-underline {
+    color: var(--text-color);
+    position: relative;
+}
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: rgb(253, 145, 163);
+    transition: all 0.8s ease;
+}
+.hover-underline:hover::after {
+    width: 100%;
+    left: 0;
+}
+/*Effet de lueur*/
+.hover-glow {
+    color: white;
+    border: 1px solid rgb(253, 145, 163);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgb(253, 145, 163);
+    background-color: rgb(253, 145, 163);
+}
+.hover-reveal::before {
+    content: "🚀 ";
+    opacity: 0;
+    margin-left: -25px;
+    transition: 0.5s;
+}
+.hover-reveal:hover::before {
+    opacity: 1;
+    margin-left: 0;
+}
+
+
 
 footer {
     background-color: #000000e7; /*Couleur fond footer*/
