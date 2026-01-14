@@ -15,6 +15,8 @@
 
     <link rel="icon" type=image/jpg href="images/Pink Guy.jpg">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body> <!--Contient tout le contenu visible (titres, images, etc...)-->
 
@@ -256,7 +258,7 @@
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   
-  <section>
+  <section> <!--MODALE-->
     <a class="btn-ouvrir" href="#modale1">Ouvrir la modale</a>
     <div class="modale" id="modale1">
       <a class="modale-overlay" href="#"></a>
@@ -264,11 +266,30 @@
         <a class="close" href="#">X</a>
         <div class="modale-content">
           <h3>Contenu</h3>
-          <p>Bouh !!!</p>
+          <p>The Dark Lord is here to !!!</p>
         </div>
       </div>
     </div>
   </section>
+
+  <section><!--ALERTE-->
+    <input type="checkbox" id="alert-toggle">
+    <label for="alert-toggle" class="alert-btn">Cliquez pour l'alerte</label>
+    <div class="alert-overlay">
+      <div class="alert-box">
+        <label for="alert-toggle" class="close">&times;</label>
+        <strong>ATTENTION</strong><br>Première alterte html css personalisée
+      </div>
+    </div>
+  </section>
+
+  <script> 
+    Swal.fire({
+      title: "JOJI",
+      text: "The Dark Lord is not Here...",
+      icon: "error"
+    });
+  </script>
 
 </body>
 </html>
