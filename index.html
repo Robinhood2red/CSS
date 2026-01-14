@@ -3,7 +3,8 @@
 <html lang="fr"> <!--html = L'élémentaire qui englobe tout / fr = la langue-->
 
 <head> <!--Contient les méta-informations (non visible)-->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <meta charset="UTF-8"> <!--utf8 = langue latine-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -190,16 +191,40 @@
   </main>
 
 
-<section class="demo-section">
-  <button class="btn-intro">Découvrir les effets</button>
-  <div class="links-container">
-    <a href="#" class="hover-color">Changement de couleur</a>
-    <a href="#" class="hover-grow">Effets de grossissement</a>
-    <a href="#" class="hover-underline">Soulignement animé</a>
-    <a href="#" class="hover-glow">Effet de lueur</a>
-    <a href="#" class="hover-reveal">Apparition d'icône</a>
-  </div>
-</section>
+  <section class="demo-section">
+    <button class="btn-intro">Découvrir les effets</button>
+    <div class="links-container">
+      <a href="#" class="hover-color">Changement de couleur</a>
+      <a href="#" class="hover-grow">Effets de grossissement</a>
+      <a href="#" class="hover-underline">Soulignement animé</a>
+      <a href="#" class="hover-glow">Effet de lueur</a>
+      <a href="#" class="hover-reveal">Apparition d'icône</a>
+    </div>
+  </section>
+
+  <section> <!--Caroussel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/greeen and pink guy.PNG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/joji visage.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Pink Guy.jpg" class="d-block w-100" alt="...">
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
   <section>
     <footer>
@@ -228,6 +253,21 @@
         <p>2026 Pink Guy - Tous droits réservés</p>
       </div>
     </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+  <section>
+    <a class="btn-ouvrir" href="#modale1">Ouvrir la modale</a>
+    <div class="modale" id="modale1">
+      <a class="modale-overlay" href="#"></a>
+      <div class="modale-box">
+        <a class="close" href="#">X</a>
+        <div class="modale-content">
+          <h3>Contenu</h3>
+          <p>Bouh !!!</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 </body>
